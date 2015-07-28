@@ -9,7 +9,7 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Portfolio Section
+   d. courserads Section
    e. Contact Section
    f. Footer
 
@@ -19,7 +19,8 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #00BDBD; } /* modified from #0f0f0f */
+body { background: #00BDBD;
+  } /* modified from #0f0f0f */
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -64,11 +65,11 @@ header .banner-text h1 {
     text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-    font: 18px/1.9em 'librebaskerville-regular', serif;
-    color: #2C3E50; /*  #A8A8A8*/
+    font: 25px/1.1em 'opensans-bold', sans-serif;
+    color: #fff; /*  #A8A8A8*/
     margin: 0 auto;
     width: 70%;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -280,10 +281,10 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 }
 
 /* ------------------------------------------------------------------ */
-/* d. Portfolio Section
+/* d. courserads Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#courserads {
     /* background: #ebeeee; */
     background: #ebeeef;
     padding-top: 70px;
@@ -291,28 +292,38 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
     overflow: hidden
 }
 
-
-#portfolio h1 {
-    font: 28px/24px 'opensans-semibold', sans-serif;
-    text-transform: uppercase;
+#courserads h5 {
+    font: 'opensans-semibold', sans-serif;
+    font-family: 'MuseoSlab500', sans-serif;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 48px;
     color: #000;
 }
 
-#portfolio h1 span {
+#courserads h6 {
+    font: 12px/14px 'opensans-bold', sans-serif;
+    text-align: left;
+    color: #fff;
+}
+
+#courserads h1 span {
     border-bottom: 3px solid #11ABB0;
     padding-bottom: 6px;
 }
   
 
-/* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
-.portfolio-item .item-wrap {
+/* courserads Content */
+#courserads-wrapper .columns { 
+  margin-bottom: 36px; 
+  margin-right: -260px;
+}
+.courserads-item .item-wrap {
     background: #fff;
     overflow: hidden;
     position: relative;
+    width: 240px;
+    height: 135px;
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -320,18 +331,18 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.portfolio-item .item-wrap a {
+.courserads-item .item-wrap a {
     display: block;
     cursor: pointer;
 }
 
-.portfolio-item .item-wrap .each-pic {
+.courserads-item .item-wrap .each-pic {
     width: 240px;
     height: 135px;
 }
 
 /* overlay */
-.portfolio-item .item-wrap .overlay {
+.courserads-item .item-wrap .overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -352,7 +363,7 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 }
 
 
-.portfolio-item .item-wrap .link-icon {
+.courserads-item .item-wrap .link-icon {
     display: block;
     color: #fff;
     height: 30px;
@@ -378,38 +389,38 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 }
 
 
-.portfolio-item .item-wrap img {
+.courserads-item .item-wrap img {
     vertical-align: bottom;
 }
-.portfolio-item .portfolio-item-meta { padding: 18px }
-.portfolio-item .portfolio-item-meta h5 {
+.courserads-item .courserads-item-meta { padding: 18px }
+.courserads-item .courserads-item-meta h5 {
     font: 14px/21px 'opensans-bold', sans-serif;
     color: #fff;
 }
-.portfolio-item .portfolio-item-meta p {
+.courserads-item .courserads-item-meta p {
     font: 12px/18px 'opensans-light', sans-serif;
     color: #c6c7c7;
     margin-bottom: 0;
 }
 
-.portfolio-item .portfolio-item-meta p span {
+.courserads-item .courserads-item-meta p span {
     font-style: italic;
 }
 
 /* on hover */
-.portfolio-item:hover .overlay {
+.courserads-item:hover .overlay {
     opacity: 1;
     -moz-opacity: 1;
     filter:alpha(opacity=100);
 }
 
-.portfolio-item:hover .overlay-right {
+.courserads-item:hover .overlay-right {
     opacity: 1;
     -moz-opacity: 1;
     filter:alpha(opacity=100);
 }
 
-.portfolio-item:hover .link-icon {
+.courserads-item:hover .link-icon {
     opacity: 1;
     -moz-opacity: 1;
     filter:alpha(opacity=100);
@@ -473,8 +484,6 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 .popup-modal .description-box .categories {
     font: 11px/21px 'opensans-light', sans-serif;
     color: #A1A1A1;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     display: block;
     text-align: left;
 }
