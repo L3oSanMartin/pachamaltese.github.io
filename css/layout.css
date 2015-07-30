@@ -9,9 +9,10 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. courserads Section
-   e. Contact Section
-   f. Footer
+   d. Courserads Section
+   e. Latex Section
+   f. Contact Section
+   g. Footer
 
 ===================================================================== */
 
@@ -530,7 +531,117 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Contact Section
+/* e. Latex Section
+/* ------------------------------------------------------------------ */
+
+#latex {
+background: #fff;
+  padding-top: 70px;
+padding-bottom: 60px; /* changed from 72px */
+  overflow: hidden;
+
+}
+
+#latex a, #latex a:visited  { 
+color: #11ABB0; 
+  }
+
+#latex a:hover, #latex a:focus { 
+color: #313131; 
+  }
+
+#latex h1 {
+font: 28px/24px 'opensans-bold', sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+#latex h1 span {
+border-bottom: 3px solid #11ABB0;
+padding-bottom: 6px;
+}
+
+#latex h3 {
+font: 25px/30px 'opensans-bold', sans-serif;
+/* padding-top: 50px; */
+  margin-bottom: 0px;
+
+}
+
+#latex h5 {
+    font: 'opensans-semibold', sans-serif;
+    font-family: 'MuseoSlab500', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 48px;
+    color: #000;
+}
+
+#latex .bv-pic {
+padding-top: 5px;
+border-radius: 10%;
+}
+
+#latex .cs-pic {
+width: 165px; 
+height: 40px;
+padding-top: 5px;
+}
+
+
+#latex .header-col { 
+padding-top: 9px; 
+padding-bottom: 45px;
+text-align: center;
+}
+
+#latex .main-col { 
+padding-top: 9px; 
+padding-right: 10%; 
+}
+
+/* .education, .work {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  border-bottom: 10px solid #E8E8E8;
+} */
+  
+  #latex .work {
+  /* border-bottom: 1px solid #E8E8E8; */
+margin-bottom: 0px;
+}
+
+#latex .info {
+font: 16px/24px 'librebaskerville-italic', serif;
+color: #2980b9; /* #6E7881 #c0392b */
+  margin-bottom: 7px;
+margin-top: 3px;
+}
+
+#latex .info span {
+margin-right: 5px;
+margin-left: 5px;
+}
+
+#latex ul {
+list-style-type: disc;
+color: #34495e;
+  padding-left: 20px;
+margin-bottom: 0px;
+margin-top: 7px;
+}
+
+#latex ul li {
+margin-bottom: 5px;
+}
+
+#latex .date {
+font: 15px/24px 'opensans-regular', sans-serif;
+/* margin-top: 6px; */
+  }
+
+
+/* ------------------------------------------------------------------ */
+/* f. Contact Section
 /* ------------------------------------------------------------------ */
 
 /*
@@ -659,7 +770,7 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 
 
 /* ------------------------------------------------------------------ */
-/* f. Footer
+/* g. Footer
 /* ------------------------------------------------------------------ */
 
 footer {
