@@ -258,7 +258,7 @@ ul#nav li.current a { color: #F06000; } /* change from #F06000*/
 }
 
 #about .download {
-    width: 35%; /* 58.33333% */
+    width: 100%; /* 58.33333% */
     padding-top: 6px;
 
 }
