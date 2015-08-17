@@ -125,45 +125,43 @@ beta.1 <- fit$coefficients[2]
 
 
 #1. Definir variables en memoria y cargar librerías
-    #Definir el directorio de trabajo
-    dir <- "/Users/pacha/pachamaltese.github.io/econometria/laboratorio1"
-    
-    #Instalar una librería que permita leer archivos XLSX
-    #install.packages("XLConnect") #desmarcar si no está instalada
-    
-    #Cargar la librería XLConnect
-    library(XLConnect)
-    
-    #Leer el archivo del Laboratorio 1
-    file <- paste0(dir,"/laboratorio1.xlsx")
-    data <- readWorksheetFromFile(file, sheet = "Hoja1", region = "A2:C20", header = FALSE)
-    data
-    
-    #Asignar nombres simples a las columnas
-    colnames(data) <- c("y", "x1", "x2")
-    data
-    
+#Definir el directorio de trabajo
+dir <- "/Users/pacha/pachamaltese.github.io/econometria/laboratorio1"
+
+#Instalar una librería que permita leer archivos XLSX
+#install.packages("XLConnect") #desmarcar si no está instalada
+
+#Cargar la librería XLConnect
+library(XLConnect)
+
+#Leer el archivo del Laboratorio 1
+file <- paste0(dir,"/laboratorio1.xlsx")
+data <- readWorksheetFromFile(file, sheet = "Hoja1", region = "A2:C20", header = FALSE)
+data
+
+#Asignar nombres simples a las columnas
+colnames(data) <- c("y", "x1", "x2")
+data
+
 #2. Haga un gráfico de cada variable explicativa sobre la explicada ¿Hay correlación entre ellas?
-    
-    #Instalar y cargar en memoria ggplot (librería para graficar)
-    #install.packages("ggplot2")
-    library(ggplot2)
-    
-    #Graficar y versus x1 e y versus x2
-    qplot(x1, y, data=data)
-    qplot(x2, y, data=data)
-    
-    #Ver la correlación entre las variables
-    cor(data)
-    
+
+#Instalar y cargar en memoria ggplot (librería para graficar)
+#install.packages("ggplot2") #desmarcar si no está instalada
+library(ggplot2)
+
+#Graficar y versus x1 e y versus x2
+qplot(x1, y, data=data)
+qplot(x2, y, data=data)
+
+#Ver la correlación entre las variables
+cor(data)
+
 #Calcule el estimador de los parámetros
-    
-    #Hacer una correlación sin constante
-    regression_nocons <- lm(y ~ x1 + x2 -1, data=data)
-    summary(regression_nocons) 
-    
-    #Hacer una regresión con constante
-    regression_cons <- lm(y ~ x1 + x2, data=data)
-    summary(regression_cons)
 
+#Hacer una correlación sin constante
+regression_nocons <- lm(y ~ x1 + x2 -1, data=data)
+summary(regression_nocons) 
 
+#Hacer una regresión con constante
+regression_cons <- lm(y ~ x1 + x2, data=data)
+summary(regression_cons)

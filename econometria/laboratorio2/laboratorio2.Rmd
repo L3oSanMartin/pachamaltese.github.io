@@ -1,5 +1,5 @@
 ---
-title: "Desarrollo Laboratorio 2 - Análisis de Datos"
+title: "Laboratorio 2 - Análisis de Datos"
 author: "Mauricio Vargas S."
 date: "16 de agosto de 2015"
 output: html_document
